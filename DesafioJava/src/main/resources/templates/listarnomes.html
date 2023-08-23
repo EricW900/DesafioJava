@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar nomes</title>
+</head>
+<body>
+    <h1>Lista de nomes cadastrados</h1>
+
+    <ul>
+        <li th:each="nome : ${nomes}" th:text="${nome}"></li>
+    </ul>
+
+    <a href="cadastronomes">Cadastrar outro nome</a>
+    <a href="removerNome">Remover nomes</a>
+    <a href="/">Voltar</a>
+
+</body>
+</html>
