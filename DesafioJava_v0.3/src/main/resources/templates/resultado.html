@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de mensalidade</title>
+</head>
+<body>
+    <h1>Resultado do cálculo</h1>
+
+    <p>Mensalidade: R$ <span th:text="${mensalidade}"></span></p>
+    <p>Valor Anual: R$ <span th:text="${valorAnual}"></span></p>
+    <p>Cálculo da mensalidade a ser paga no tempo inserido: R$ <span th:text="${valorTempo}"></span></p>
+
+    <a href="/">Voltar</a>
+</body>
+</html>
