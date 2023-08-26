@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de mensalidade</title>
+</head>
+<body>
+<h1>Vamos calcular a mensalidade!</h1>
+
+    <form action="/calcularm" method="post">
+        <label for="mensalidade">Valor da mensalidade: </label>
+        <input type="text" id="mensalidade" name="mensalidade" required><br>
+        <!--<button type="submit">Calcular</button>-->
+
+        <br>
+
+        <label for="tempo">Insira o tempo: </label>
+        <input type="text" id="tempo" name="tempo" required>
+        <button type="submit">Calcular</button>
+    </form>
+
+    <p th:text="${erro}" style="color: red;"></p>
+
+        <a href="/">Voltar</a>
+
+</body>
+</html>
